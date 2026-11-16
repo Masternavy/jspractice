@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Time of day greeting</title>
+<meta charset = "UTF-8"/>
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1 id="message"></h1>
+
+<script>
+var current= new Date();
+var hour = current.getHours();
+
+if (hour<=12) {
+document.getElementById("message").innerHTML = "Good Morning!";
+}
+else if (hour<=12) {
+document.getElementById("message").innerHTML = "Good Afternoon!";
+}
+else {
+document.getElementById("message").innerHTML = "Good Evening!";
+}
+</script>
+
+</body>
+</html>
